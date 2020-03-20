@@ -1,0 +1,16 @@
+{
+  "config-section-1": {
+    "sub-section-1-1": {
+      "config-attr-1": "somevalue"
+    },
+    "sub-section-1-2": {
+      "config-attr-2": "someothervalue"
+    }
+  },
+  "config-section-2": {
+    "sub-section-2-1": {
+      "config-attr-3": "yetanothervalue"
+    }
+  }
+}
+
