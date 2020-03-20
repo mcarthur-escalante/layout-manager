@@ -13,7 +13,7 @@
         "data-items": [
           {
             "type": "FHIR_Patient",
-            "is-collection": true,
+            "is-collection": false,
             "fetch-strategy": {
               "type": "REST",
               "config": {
