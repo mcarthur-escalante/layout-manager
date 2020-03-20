@@ -1,0 +1,37 @@
+{
+  "1": {
+    "id": 1,
+    "type": "SplitPane",
+    "props": {
+      "split": "vertical",
+      "defaultSize": "50%"
+    }
+  },
+  "2": {
+    "id": 2,
+    "type": "Tile",
+    "parent": 1,
+    "allowed-components": [
+      "PatientProfile",
+      "ContactInfo",
+      "ImagingStudies",
+      "Labs",
+      "VitalsGraph",
+      "Allergies",
+      "SocialHistory",
+      "CareProviders",
+      "Conditions",
+      "Medications",
+      "Contacts"
+    ]
+  },
+  "3": {
+    "id": 1,
+    "type": "Tile",
+    "parent": 1,
+    "allowed-components": [
+      "DocumentViewer",
+      "DICOMViewer"
+    ]
+  }
+}
