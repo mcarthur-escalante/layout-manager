@@ -1,0 +1,437 @@
+{
+  "base-url": "...",
+  "components": [
+    {
+      "id": "PatientProfile",
+      "metadata": {
+        "enabled": true,
+        "title": "Patient Profile",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Patient",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  },
+                  "POST": {
+                    "paramName": "paramValue"
+                  },
+                  "PUT": {
+                    "paramName": "paramValue"
+                  },
+                  "DELETE": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "FHIR_AllergyIntolerance",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "FHIR_CarePlan",
+            "is-collection": false,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "layout-constraints": {
+          "h-size": {
+            "min": {
+              "value": 460,
+              "unit": "px"
+            },
+            "max": {
+              "value": 50,
+              "unit": "%"
+            }
+          },
+          "v-size": {
+            "min": {
+              "value": 550,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ContactInfo",
+      "metadata": {
+        "enabled": true,
+        "title": "Contact Info",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Patient",
+            "is-collection": false,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  },
+                  "POST": {
+                    "paramName": "paramValue"
+                  },
+                  "PUT": {
+                    "paramName": "paramValue"
+                  },
+                  "DELETE": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ImagingStudies",
+      "metadata": {
+        "enabled": true,
+        "title": "Images",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_ImagingStudy",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "Labs",
+      "metadata": {
+        "enabled": true,
+        "title": "Labs",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_DiagnosticReport",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "VitalsGraph",
+      "metadata": {
+        "enabled": true,
+        "title": "Vitals",
+        "type": "VIEWER.Graph",
+        "type-config": {
+          "graph-details": {
+            "type": "line",
+            "period": {
+              "value": 2,
+              "unit": "weeks"
+            },
+            "series": [
+              "BodyTemp",
+              "OxygenSat",
+              "BP",
+              "RespRate",
+              "HeartRate"
+            ]
+          },
+          "data-items": [
+            {
+              "type": "FHIR_Observation",
+              "is-collection": true,
+              "fetch-strategy": {
+                "type": "REST",
+                "config": {
+                  "url": "...",
+                  "parameters": {
+                    "GET": {
+                      "paramName": "paramValue"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DICOMViewer",
+      "metadata": {
+        "enabled": true,
+        "title": "Imaging Study",
+        "type": "VIEWER.DICOM",
+        "data-items": [
+          {
+            "type": "FHIR_ImagingStudy",
+            "is-collection": false,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "Allergies",
+      "metadata": {
+        "enabled": true,
+        "title": "Allergies",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_AllergyIntolerance",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "DocumentViewer",
+      "metadata": {
+        "enabled": true,
+        "title": "Document",
+        "type": "VIEWER.Document",
+        "type-config": {
+          "document-url": "..."
+        }
+      }
+    },
+    {
+      "id": "SocialHistory",
+      "metadata": {
+        "enabled": true,
+        "title": "Social History",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Observation",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CareProviders",
+      "metadata": {
+        "enabled": true,
+        "title": "Care Providers",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Practitioner",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "Conditions",
+      "metadata": {
+        "enabled": true,
+        "title": "Conditions",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Condition",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  },
+                  "POST": {
+                    "paramName": "paramValue"
+                  },
+                  "PUT": {
+                    "paramName": "paramValue"
+                  },
+                  "DELETE": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "Medications",
+      "metadata": {
+        "enabled": true,
+        "title": "Medications",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Medication",
+            "is-collection": true,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "Contacts",
+      "metadata": {
+        "enabled": true,
+        "title": "Contacts",
+        "type": "VIEWER.Template",
+        "type-config": {
+          "template-url": "..."
+        },
+        "data-items": [
+          {
+            "type": "FHIR_Patient",
+            "is-collection": false,
+            "fetch-strategy": {
+              "type": "REST",
+              "config": {
+                "url": "...",
+                "parameters": {
+                  "GET": {
+                    "paramName": "paramValue"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

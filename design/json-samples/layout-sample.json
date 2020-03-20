@@ -1,0 +1,228 @@
+{
+  "1": {
+    "id": 1,
+    "type": "SplitPane",
+    "props": {
+      "split": "vertical",
+      "defaultSize": 347
+    }
+  },
+  "2": {
+    "id": 2,
+    "type": "SplitPane",
+    "parent": 1,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 417.5
+    }
+  },
+  "3": {
+    "id": 3,
+    "type": "SplitPane",
+    "parent": 1,
+    "props": {
+      "split": "vertical",
+      "defaultSize": 432.5
+    }
+  },
+  "4": {
+    "id": 4,
+    "type": "SplitPane",
+    "parent": 3,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 305.5
+    }
+  },
+  "5": {
+    "id": 5,
+    "type": "SplitPane",
+    "parent": 3,
+    "props": {
+      "split": "vertical",
+      "defaultSize": 521.25
+    }
+  },
+  "6": {
+    "id": 6,
+    "type": "SplitPane",
+    "parent": 5,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 685.5
+    }
+  },
+  "7": {
+    "id": 7,
+    "type": "SplitPane",
+    "parent": 5,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 226.5
+    }
+  },
+  "8": {
+    "id": 8,
+    "type": "Tile",
+    "parent": 2,
+    "props": {
+      "tileComponentID": "PatientProfile",
+      "tileID": "Tile_c5a4b140-6926-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "9": {
+    "id": 9,
+    "type": "SplitPane",
+    "parent": 2,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 194.75
+    }
+  },
+  "10": {
+    "id": 10,
+    "type": "Tile",
+    "parent": 9,
+    "props": {
+      "tileComponentID": "ContactInfo",
+      "tileID": "Tile_ec9f7b90-6926-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "11": {
+    "id": 11,
+    "type": "SplitPane",
+    "parent": 9,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 113.375
+    }
+  },
+  "12": {
+    "id": 12,
+    "type": "Tile",
+    "parent": 11,
+    "props": {
+      "tileComponentID": "ImagingStudies",
+      "tileID": "Tile_f9a36450-6926-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "13": {
+    "id": 13,
+    "type": "Tile",
+    "parent": 11,
+    "props": {
+      "tileComponentID": "Labs",
+      "tileID": "Tile_04b9ade0-6927-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "14": {
+    "id": 14,
+    "type": "Tile",
+    "parent": 4,
+    "props": {
+      "tileComponentID": "VitalsGraph",
+      "tileID": "Tile_cc7c8dd0-6926-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "15": {
+    "id": 15,
+    "type": "SplitPane",
+    "parent": 4,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 449.25
+    }
+  },
+  "16": {
+    "id": 16,
+    "type": "Tile",
+    "parent": 15,
+    "props": {
+      "tileComponentID": "DICOMViewer",
+      "tileID": "Tile_13e2c090-6927-11ea-a9b0-7519f678a7a6",
+      "tileTitle": "20191127 - Head MRI"
+    }
+  },
+  "17": {
+    "id": 17,
+    "type": "Tile",
+    "parent": 15,
+    "props": {
+      "tileComponentID": "Allergies",
+      "tileID": "Tile_22bb9060-6927-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "18": {
+    "id": 18,
+    "type": "Tile",
+    "parent": 6,
+    "props": {
+      "tileComponentID": "DocumentViewer",
+      "tileID": "Tile_d669e7c0-6926-11ea-a9b0-7519f678a7a6",
+      "tileTitle": "20191201 - Lab Requisition"
+    }
+  },
+  "19": {
+    "id": 19,
+    "type": "Tile",
+    "parent": 6,
+    "props": {
+      "tileComponentID": "SocialHistory",
+      "tileID": "Tile_385cfa80-6927-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "20": {
+    "id": 20,
+    "type": "Tile",
+    "parent": 7,
+    "props": {
+      "tileComponentID": "CareProviders",
+      "tileID": "Tile_e27fee10-6926-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "21": {
+    "id": 21,
+    "type": "SplitPane",
+    "parent": 7,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 301
+    }
+  },
+  "22": {
+    "id": 22,
+    "type": "Tile",
+    "parent": 21,
+    "props": {
+      "tileComponentID": "Conditions",
+      "tileID": "Tile_469c2260-6927-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "23": {
+    "id": 23,
+    "type": "SplitPane",
+    "parent": 21,
+    "props": {
+      "split": "horizontal",
+      "defaultSize": 156.875
+    }
+  },
+  "24": {
+    "id": 24,
+    "type": "Tile",
+    "parent": 23,
+    "props": {
+      "tileComponentID": "Medications",
+      "tileID": "Tile_50d50440-6927-11ea-a9b0-7519f678a7a6"
+    }
+  },
+  "25": {
+    "id": 25,
+    "type": "Tile",
+    "parent": 23,
+    "props": {
+      "tileComponentID": "Contacts",
+      "tileID": "Tile_59ab48e0-6927-11ea-a9b0-7519f678a7a6"
+    }
+  }
+}
